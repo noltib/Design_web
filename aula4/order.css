@@ -1,0 +1,24 @@
+body{
+    display: flex;
+}
+section{
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+/* DEFINE TUDO AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+.not-0{
+    order: 4;
+}
+.not-3{
+    order: 1;
+}
+.not-4{
+    order: 2;
+}
+.not-1{
+    order: 0;
+}
+.not-2{
+    order: 3;
+}
