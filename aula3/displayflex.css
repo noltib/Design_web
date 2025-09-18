@@ -1,0 +1,19 @@
+header, footer {
+    background-color: gray;
+    text-align: center;
+    padding: 1em ;
+}
+main > section {
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.3rem 0.3rem rgb(204, 204, 204);
+    margin: 1rem 0;
+}
+main{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}

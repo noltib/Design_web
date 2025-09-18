@@ -1,0 +1,17 @@
+figure{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+div.outrospercursos{
+    float: left;
+    border: 2px solid;
+    padding: 1rem;
+    margin: 2rem;
+}
+footer{
+    clear: both;
+    text-align: center;
+    padding: 1rem;
+    background-color: lightgray;
+}
