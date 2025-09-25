@@ -1,0 +1,29 @@
+main{
+    max-width: 70rem;
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 10rem 10rem;
+    grid-template-areas:
+    "c b d"
+    "a a d"
+    ;
+}
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    overflow: auto;
+}
+section.noticias{
+    grid-area: a;
+}
+section.comemoracao{
+    grid-area: b;
+}
+section.organizadores{
+    grid-area: c;
+}
+section.corrida{
+    grid-area: d;
+}
