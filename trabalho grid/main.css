@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    background: linear-gradient(to left,#7292A6, #224459 );
+    padding: 1rem;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr ;
+    grid-template-rows: 10rem 10rem 10rem;
+    grid-template-areas:
+    "a b e e h"
+    "a c f g i"
+    "a d f j j"
+    ;
+    gap: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+section.d , section.g, section.h, section.i{
+    position: relative;
+    overflow: hidden;
+    padding: 0;     
+}
+section.d p, section.g p, section.h p, section.i p{
+    text-align: center;
+    position: absolute; 
+    top: 87%;
+    left: 50%;
+    padding: 0.2rem 9rem;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    z-index: 2;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.534);
+}
+section  img{ 
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+section{
+    padding: 1rem;
+    overflow: auto;
+    background-color: rgb(235, 234, 234);
+}
+section.a{
+    background-color: #c5d1d9;
+    grid-area: a;
+    margin: 0;
+    padding: 0;
+}
+section.a a, section.a li{
+    text-decoration: none;
+    list-style-type: none;
+    color: #368bb6;
+    margin: 0;
+    padding: 1rem 10px;
+    display: block;
+    font-size: 27px;
+}
+a{
+    padding: 0 1rem;
+}
+a:hover{
+    background-color: #92b5cc;
+}
+section.b{
+    grid-area: b;
+}
+section.b p{
+    font-size: 13px;
+}
+section.b p span{
+    color: #224459;
+    font-weight: 800;
+}
+.info{
+    color: #368bb6;
+}
+section.c{
+    grid-area: c;
+}
+section.c ul{
+    margin: 0.5em 2em;
+    font-size: small;
+}
+section.c li{
+    margin-top: 0.5em;
+}
+section.d{
+    grid-area: d;
+}
+section.e{
+    grid-area: e;
+}
+td, tr{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.1vw;
+    font-size: small;
+}
+section.e table{
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+section.f{
+    grid-area: f;
+}
+section.g{
+    grid-area: g;
+}
+section.h{
+    grid-area: h;
+}
+section.i{
+    grid-area: i;
+}
+section.j{
+    grid-area: j;
+}
+footer{
+    background-color:#224459;
+    padding: 5rem;
+    color: white;
+    text-align: center;
+}
