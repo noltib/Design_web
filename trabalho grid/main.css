@@ -46,6 +46,7 @@ section  img{
     display: block;
     z-index: 1;
     position: relative;
+    filter: grayscale(70%);
 }
 section{
     padding: 1rem;
