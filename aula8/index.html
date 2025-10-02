@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="dadosenviados.html">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome" required> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email" required> <br>
+        <label for="curso">Curso:</label>
+        <select name="curso" id="curso">
+            <option value="infoweb">INFOWEB</option>
+            <option value="adm">adm</option>
+            <option value="msi">msi</option>
+            <option value="tads">tads</option>
+        </select> <br>
+        <h2>Diretorias</h2>
+        <label><input type="radio" name="dir" value="diatinf">diatinf</label>
+        <label><input type="radio" name="dir" value="diarem">diarem</label>
+        <label><input type="radio" name="dir" value="diacin">diacin</label>
+        <label><input type="radio" name="dir" value="diacon">diacon</label>
+        <label><input type="radio" name="dir" value="diac">diac</label>
+        <br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" list="Cidade-list"> <br>
+        <datalist id ="Cidade-list">
+            <option value="LAGOA SALGADA SUPREMACY 🎉🎉">
+            <option value="Natal">
+            <option value="Parnamirim">
+            <option value="macaiba">
+            <option value="Tibau">
+        </datalist>
+        <label for="obs">Observações:</label>
+        <textarea name="obs" id="obs" cols="30" rows="10"></textarea> <br>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>
