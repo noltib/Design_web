@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamanho</title>
+</head>
+<body>
+    <label>Nome:</label>
+    <input type="text" id="nome_input">
+    <button id="enviar" onclick="exibir()">enviar</button>
+    <script>
+        function exibir(){
+            nome = document.getElementById("nome_input").value
+            for(i=0; i<5; i++){
+                document.write(`<p style="font-size: ${i+1}rem;">${nome}</p>`)
+            }
+        }
+    </script>
+</body>
+</html>

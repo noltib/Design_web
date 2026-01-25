@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nomes</title>
+</head>
+<body>
+    <label>Nome:</label>
+    <input type="text" id="nome_input">
+    <button id="enviar" onclick="adicionar_nome()">Adicionar</button>
+    <p id="nomes"></p>
+    <script>
+        let nomes = ["ana", "bia", "carlos"];
+        function exibir(){
+            document.getElementById("nomes").innerHTML = "";
+            for(i=0; i<nomes.length; i++){
+                document.getElementById("nomes").innerHTML += nomes[i] + "<br>"
+            }
+        }
+        function adicionar_nome(){
+            let nome = document.getElementById("nome_input").value
+            document.getElementById("nome_input").value = ''
+            nomes.push(nome);
+            exibir();
+        }   
+        exibir();
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <p id="mensagem"> </p>
+    
+    <div id="galeria"></div>
+
+    <script>
+      let contador = 0;               // começa em 0
+      const totalImagens = 50000;         // número de imagens que você quer criar
+      const container = document.getElementById("galeria");
+  
+      while (contador < totalImagens) {
+        const img = document.createElement("img");
+        img.src = `gato.gif`; // gera imagens diferentes
+        img.alt = `Gatinho ${contador + 1}`;
+        container.appendChild(img);
+        img.src = `OIP.webp`; // gera imagens diferentes
+        img.alt = `Gatinho ${contador + 1}`;
+        container.appendChild(img);
+        contador++; // incrementa o contador
+      }
+    </script>
+</body>
+</html>

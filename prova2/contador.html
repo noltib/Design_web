@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+    <style>
+        body{
+            justify-content: center;
+            display: flex;
+            gap: 1em;
+        }
+        button{
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <button id="menos" onclick="diminuir()">-</button>
+    <p id="numero"></p>
+    <button id="mais" onclick="adicionar()">+</button>
+
+    <script>
+        let numero = 0
+        function diminuir(){
+            numero = numero -1
+            document.getElementById("numero").innerText = (numero)            
+        }
+        function adicionar(){
+            numero = numero +1
+            document.getElementById("numero").innerText = (numero)
+        }
+        document.getElementById("numero").innerText = (numero)
+    </script>
+
+</body>
+</html>

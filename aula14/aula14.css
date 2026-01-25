@@ -1,0 +1,5 @@
+.container-md{
+    display: flex;
+    gap: 1em;
+    margin: 1em auto;
+}

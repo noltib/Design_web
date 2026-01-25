@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label>N1:
+        <input type="number" id="n1">
+    </label>
+    <label>N2:
+        <input type="number" id="n2">
+    </label>
+    <button id="somar">Somar</button>
+
+    <p id="resultado"></p>
+
+    <script>        
+
+        const btnsomar = document.querySelector("#somar")
+        btnsomar.addEventListener("click", function(e){
+            console.log("EVENTO CLICAR")
+            let n1 = document.getElementById("n1").value
+            let n2 = document.getElementById("n2").value
+            valor = parseInt(n1) + parseInt(n2)
+            console.log(valor)
+            document.getElementById("resultado").innerText = "Resultado: " + (valor)
+        })
+        /*
+        let opcao = window.prompt("Digite um valor de 1 a 3:")
+        opcao = parseInt(opcao)
+        switch (opcao) {
+            case 1:console.log("VALOR: 1");break;
+            case 2:console.log("VALOR: 2");break;
+            case 3:console.log("VALOR: 3");break;
+            default:console.log("NENHUMA OPÇÃO");
+        }
+        */
+
+        let lista = [1,2,3,4,5]
+        console.log(lista[2])
+        lista.push(5)
+        console.log(lista.toString())
+        console.log(lista.length)
+        delete lista[1]
+        console.log(lista.toString())
+        lista[0] = 54
+        let alunos = ["Ana", "Bia", "Carlos"]
+        let emojis = ["😀","😂","😅","😍"]
+        console.log(Math.random()) 
+        console.log(Math.random()*5)
+        let x = Math.floor(Math.random()*4)
+        let y = Math.floor(Math.random()*4)
+        console.log(x)
+        document.write(`<p> ${emojis[x]} </p>`) 
+        document.write("<p>" + emojis[y] + "</p>")
+        for(let n = 0; n<=5; n++){
+            console.log(n)
+        }
+        for(let itens in emojis){
+            console.log(emojis[itens]+ " - ")
+        }
+        for(let itens in alunos){
+            console.log(alunos[itens]+ " - ")
+        }
+        alunos.forEach(function(index){
+            console.log("forEach: " + index)
+        })
+    </script>
+
+</body>
+</html>

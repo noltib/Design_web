@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funções nativas</title>
+</head>
+<body>
+    <script>
+        let nome = "INFOWEB";
+
+        console.log("Comprimento da string: " + nome.length);
+        console.log("Posição do caracter da string: " + nome.charAt(0));
+        console.log("Subistituir string: " + nome.replace("INFO", "INFORMÁTICA PARA "));
+        console.log("Pegar uma substring da string: " + nome.substring(4, 3));
+        console.log("Divide a string: " + nome.split("O")[0]);
+        console.log("coloca em maiúsculo: " + nome.toUpperCase());
+        console.log("coloca em minúsculo: " + nome.toLowerCase());
+
+        nome = "   INFOWEB   ";
+        console.log(nome);
+        console.log("Remove espaços em branco: " + nome.trim());
+        console.log("juntar strings: " + nome.trim().concat(" IFRN"));
+
+        // Funções nativas de matematica
+
+        console.log("valor de pi: " + Math.PI);
+        let num = 54.6;
+        console.log("arredondar para cima: " + Math.ceil(num));
+        console.log("arredondar para baixo: " + Math.floor(num));
+        console.log("arredondamento padrão: " + Math.round(num));
+        console.log("Numero aleatório: " + Math.random());
+        console.log("Retornar o maior valor: " + Math.max(10, 5, 20, 8, 15));
+        console.log("Retornar o menor valor: " + Math.min(10, 5, 20, 8, 15));
+        console.log("potência: " + Math.pow(2, 3));
+        console.log("raiz quadrada: " + Math.sqrt(64));
+
+        // Funções nativas de data
+
+        const data = new Date();
+        console.log("Data atual: " + data);
+        console.log("mes: " + data.getMonth() + 1);
+        console.log("ano: " + data.getFullYear());
+        console.log("data: " + data.getDate() +"/" + (data.getMonth() + 1) + "/" + data.getFullYear());
+
+        document.write("<p>data: " + data.getDate() +"/" + (data.getMonth() + 1) + "/" + data.getFullYear() + "</p>");
+
+        const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+        mes = meses[data.getMonth()];
+        document.write("<p>data: " + data.getDate() +" de " + (mes) + " de " + data.getFullYear() + "</p>");
+
+
+    </script>
+</body>
+</html>

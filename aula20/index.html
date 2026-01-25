@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de DOM</title>
+    <style>
+        .destaque{
+            background-color: aqua;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragrafocomid">DOM - É O MODELO DE OBJETO DE DOCUMENTO</p>
+    <span>SPAN1</span>
+    <p class="paragrafocomclass">DOM - É O MODELO DE OBJETO DE DOCUMENTO <span>SPAN2</span></p>
+
+    <ol quantidade="8" data-produtos="10">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+    <figure>
+        <img src="lagoa salgada ponto pê eni gê.png" alt="" width="500">
+    </figure>
+    <script>
+        /*
+        MANIPULAÇÃO DE DOM
+        */
+
+        const pcomid = document.getElementById("paragrafocomid");
+        const pcomclass = document.querySelector(".paragrafocomclass span");
+        pcomclass.innerHTML = "<b>NOVO</b> texto para o span"
+
+        document.querySelector(".paragrafocomclass").classList.add("destaque");
+        //classList - adiciona, remove ou alterna a classe de um elemento
+        document.getElementsByTagName("li")[1].style.color = "green";
+        console.log(document.getElementsByTagName("li").length);
+        const img = document.querySelector("img");
+
+        console.log(img.getAttribute("src"));
+        console.log(img.getAttribute("width"));
+
+        const Imagens = ["lagoa salgada ponto pê eni gê.png", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2Dp8wYxXZA3PO7014M1Wuz0QOAYYM9Gk1Q&s", "https://memesmuitonice.home.blog/wp-content/uploads/2018/12/42179566_273436239945666_4117338679976919040_n.jpg","https://external-preview.redd.it/isso-que-%C3%A9-shitpost-de-verdade-v0-MHpuOWJheG1pajVmMWaz2jxNovHfxfpUnoLtVazd-uTplIs2WSHE7SN85xp_.png?format=pjpg&auto=webp&s=74c732d200606ac724048ff3f29c3d4c7d53623e"];
+        let imagen = 0;
+        const trocarimagem = document.querySelector("img");
+        trocarimagem.addEventListener("click", function(){
+            imagen++;
+            if(imagen >= Imagens.length){
+                imagen = 0;
+            }
+            trocarimagem.setAttribute("src", Imagens[imagen]);
+        });
+
+        const lista = document.querySelector("ol");
+        console.log(lista.getAttribute("quantidade"));
+        console.log(lista.hasAttribute("quantidade"));
+        console.log(lista.dataset.produtos);
+        console.log(lista.attributes);
+
+
+    </script>
+
+</body>
+</html>

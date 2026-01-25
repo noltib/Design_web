@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'gameplay';
+            src: url('font/Gameplay.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        *{
+            transition: 0.7s;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0 40px;
+        }
+        #normal{
+            padding: 0.5rem;
+            background-color: whitesmoke;
+            color: black;
+            border-width: 0.5px;
+            border-radius: 5px;
+            border-color: black;
+        }
+        #escuro{
+            padding: 0.5rem;
+            background-color: rgb(44, 44, 44);
+            color: white;
+            border-width: 0.5px;
+            border-radius: 5px;
+            border-color: white;
+        }
+        #antigo{
+            padding: 0.5rem;
+            font-family: gameplay, sans-serif;
+            background-color: rgb(179, 179, 179);
+            font-size: xx-small;
+            border: 2px dashed ;
+        }
+        .tema_normal a{
+            text-decoration: none;
+            color: black;
+            background-color: rgb(255, 189, 189);
+        }
+        .tema_normal{
+            background-color: whitesmoke;
+            color: black;
+        }
+        .tema_normal img{
+            border-radius: 20px;
+        }
+        .tema_escuro a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(173, 25, 25);
+        }
+        .tema_escuro{
+            background-color: rgb(44, 44, 44);
+            color: white;
+        }
+        .tema_escuro img{
+            border-radius: 20px;
+        }
+        .tema_antigo a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(173, 25, 25);
+        }
+        .tema_antigo{
+            background-color: rgb(179, 179, 179);
+            color: black;
+            font-family: gameplay, sans-serif;
+            font-size: smaller;
+        }
+        .tema_antigo img{
+            border: 5px dashed ;
+        }
+    </style>
+</head>
+<body class="tema_normal">
+
+    <h1>Informações sobre alguma coisa</h1>
+    <h2>Informações basicas:</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Nesciunt</a> <!-- esses seriam como um saiba mais da palavra, não so como um marca-texto. ele redicionaria para a pagina da wikipedia ou algo assim --> qui repudiandae, magni sed id animi, ipsa reiciendis quos aspernatur odit ratione beatae aliquid laborum adipisci amet culpa eveniet praesentium! Iure.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam amet maxime illo mollitia repellendus iste consequuntur magnam eos labore ea reiciendis molestiae obcaecati sunt, quod voluptatem fugiat animi ipsum impedit.</p>
+
+    <h2>Historia:</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Magni</a> eos mollitia quasi. Ea, quod illo? Ipsa dolor voluptatum iste consectetur quae ratione, impedit excepturi labore illo suscipit. Eum, porro asperiores!</p>
+    <p>Commodi vitae vel suscipit, voluptate porro iusto cum architecto atque quos odit expedita aperiam ducimus deserunt qui inventore, modi quidem corporis. Assumenda nemo ad rerum reiciendis numquam maxime, autem sunt.</p>
+
+    <h2>Imagens:</h2>
+    <figure><img src="https://picsum.photos/700/200" alt="imagem"></figure>
+    <figure><img src="https://picsum.photos/701/200" alt="imagem"></figure>
+
+
+    <button id="normal">normal</button>
+    <button id="escuro">escuro</button>
+    <button id="antigo">antigo</button>
+
+    <script>
+    document.getElementById("normal").onclick = () => document.body.className = "tema_normal";
+
+    document.getElementById("escuro").onclick = () => document.body.className = "tema_escuro";
+
+    document.getElementById("antigo").onclick = () => document.body.className = "tema_antigo";
+    </script>
+</body>
+</html>

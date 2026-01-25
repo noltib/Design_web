@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    background-color: #D8D4CB;
+    padding: 10em;
+    font-size: 8px;
+    color: #08254F;
+}
+div.cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 25%;
+    gap: 2em;
+    position: relative;
+    top: -2rem;
+}
+section{
+    background-color: #08254F;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+div.texto{
+    border: black 1px solid;
+    margin: 1rem 25% 0 25%;    
+    padding: 2em;
+}
+p{
+    margin-bottom: 1em;
+}
+h1{
+    font-weight: lighter;
+}

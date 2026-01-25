@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quaerat nesciunt iure. Architecto dignissimos voluptatem ducimus a perspiciatis quisquam facilis nemo molestias quae doloribus, fugiat, tempora beatae sequi labore adipisci!</p>
+    <input type="color" id="cor">
+    <button id="mudarcor" onclick="mudarcor()">mudar cor</button>
+    <button id="btnn">Muda dnv</button>
+
+    <script>
+        let btnn = document.getElementById("btnn")
+        btnn.addEventListener("click", function(e){
+            let cor = document.getElementById("cor").value
+            document.body.style.backgroundColor = cor
+        })
+        function doidera(){
+            r = Math.random()*255
+            g = Math.random()*255
+            b = Math.random()*255
+            document.body.p.style.color = `rgb(${r}, ${g}, ${b})`
+        }
+
+        function mudarcor(){
+            cor = document.getElementById("cor").value
+            document.body.style.backgroundColor = cor
+        }
+
+        function somar(){
+            return 3+8
+        }
+        console.log(somar())
+        function somar2(n1, n2){
+            return n1 + n2
+        }
+        console.log(somar2(5,8))
+        function somar3(n1,n2, n3){
+            return n1 + n2 + n3
+        }
+        console.log(somar3(5,8,9))
+        function somar4(n1,n2){
+            if(!isNaN(n1) && !isNaN(n2)){
+                return n1 + n2
+            } else return "colocar parâmetros numéricos"
+        }
+        console.log(somar4(5,'teste'))
+        function somar5(n1=0,n2=0){
+            return n1 + n2
+        }
+        console.log(somar5(7))
+        function borda(nome, borda){
+            document.body.style.borderWidth = borda + "rem"
+            document.body.style.borderStyle = "solid"
+            document.body.style.borderColor = nome
+        }
+        borda("green", 2)
+        setInterval(() =>{
+            doidera()
+        },1000)
+    </script>
+</body>
+</html>

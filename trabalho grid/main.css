@@ -76,25 +76,30 @@ a:hover{
 }
 section.b{
     grid-area: b;
+    padding-top: 0.5rem;
 }
 section.b p{
     font-size: 13px;
+    line-height: 1.7;
 }
 section.b p span{
     color: #224459;
-    font-weight: 800;
+    font-weight: 1000;
 }
 .info{
     color: #368bb6;
+    border: #368bb6 1px solid;
+    padding: 2px;
+    margin-top: 5px;
 }
 section.c{
     grid-area: c;
 }
-section.c ul{
-    margin: 0.5em 2em;
+ul{
+    margin: 0 2em 0 2rem;
     font-size: small;
 }
-section.c li{
+li{
     margin-top: 0.5em;
 }
 section.d{
@@ -117,7 +122,30 @@ section.e table{
 
 section.f{
     grid-area: f;
+    padding: 1rem 2vw 0 2vw;
 }
+input[type="text"], input[type="email"]{
+    width: 90%;
+    padding: 0.8vw;
+    margin: 0.9vh 0;
+    border: #7e7e7e 2px solid;
+}
+#alunoIF, label{
+    cursor: pointer;
+    
+}
+input[type="submit"]{
+    padding: 0.8vw;
+    width: 60%;
+    display: block;
+    margin: 10px auto;
+    background-color: #292929;
+    border: none;
+    color: rgb(163, 163, 163);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
 section.g{
     grid-area: g;
 }
@@ -129,6 +157,10 @@ section.i{
 }
 section.j{
     grid-area: j;
+}
+section.j p{
+    font-size: small;
+    margin-top: 1vw;
 }
 footer{
     background-color:#224459;

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Kumar+One+Outline&display=swap');
+:root{
+    /* definição de variaveis no elemento principal */
+    --princi-tx:blue;
+    --princi-bg:cadetblue;
+}
+
+body{
+    background-color: rgb(231, 246, 255);
+    font-family: "Kalnia Glaze", serif;
+}
+header + section{
+    background-color: blueviolet;
+}
+section{
+    height: 20rem;
+    background-color: #ededed;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+}
+section p{
+    animation-name: mostrar;
+    animation-duration: 5s;
+}
+@keyframes mostrar{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+div{
+    padding: 2rem;
+    border-radius: 100%;
+}
