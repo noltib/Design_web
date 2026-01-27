@@ -1,4 +1,4 @@
-# turismo_natal
+# natal_turismo
 
 ## Project setup
 ```
