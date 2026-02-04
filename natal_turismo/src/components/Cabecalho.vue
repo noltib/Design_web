@@ -1,12 +1,17 @@
 <template>
-    <header>
-        <nav>
-            <figure><img src="#" alt=""></figure>  
-            <ul>
-                <li>inicio</li>
-                <li>pontos turisticos</li>
-                <li>restaurantes</li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+
+
+      <ul>
+        <li><RouterLink to="/">Início</RouterLink></li>
+      </ul>
+    </nav>
+  </header>
 </template>
+
+<script>
+export default {
+  name: "Cabecalho",
+};
+</script>
