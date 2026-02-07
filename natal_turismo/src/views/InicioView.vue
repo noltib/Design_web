@@ -6,6 +6,21 @@
       </span>
     </h2>
     <p>Natal, conhecida como a Cidade do Sol, é um dos destinos mais encantadores do Brasil. Com um clima agradável praticamente o ano inteiro e paisagens de tirar o fôlego, a capital do Rio Grande do Norte conquista visitantes logo no primeiro olhar. Suas praias de águas claras e dunas douradas formam um cenário único, onde natureza e tranquilidade caminham lado a lado.</p>
+    <div>
+    <Card titulo="Praia de Ponta Negra" 
+          :imagem="pontaNegra" 
+          descricao="A Praia de Ponta Negra é a mais famosa de Natal, conhecida por sua beleza e pela presença do Morro do Careca, uma duna icônica que se destaca na paisagem. Com águas calmas e uma infraestrutura turística completa, é o local perfeito para relaxar, praticar esportes aquáticos ou desfrutar dos bares e restaurantes à beira-mar." />
+ 
+    <Card titulo="Praia de Ponta Negra" 
+          :imagem="pontaNegra" 
+          descricao="A Praia de Ponta Negra é a mais famosa de Natal, conhecida por sua beleza e pela presença do Morro do Careca, uma duna icônica que se destaca na paisagem. Com águas calmas e uma infraestrutura turística completa, é o local perfeito para relaxar, praticar esportes aquáticos ou desfrutar dos bares e restaurantes à beira-mar." />
+ 
+    <Card titulo="Praia de Ponta Negra" 
+          :imagem="pontaNegra" 
+          descricao="A Praia de Ponta Negra é a mais famosa de Natal, conhecida por sua beleza e pela presença do Morro do Careca, uma duna icônica que se destaca na paisagem. Com águas calmas e uma infraestrutura turística completa, é o local perfeito para relaxar, praticar esportes aquáticos ou desfrutar dos bares e restaurantes à beira-mar." />
+ 
+    </div>
+
   </main>
 
 </template>
@@ -50,8 +65,28 @@ onMounted(() => {
 
 
 <script>
+import Card from '@/components/Card.vue';
+import pontaNegra from '@/assets/PontaNegra.jpg';
+
 export default {
   name: "InicioView",
+  components: {
+    Card,
+  },
+  props: {
+    titulo: {
+      type: String,
+      required: true,
+    },
+    imagem: {
+      type: String,
+      required: true,
+    },
+    descricao: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
@@ -67,10 +102,17 @@ h2 {
 
 span {
   color: #01A9B0;
-  position: fixed;
+  position: absolute;
   margin-left: 0.3em;
 }
 main{
-  margin: 0 15%;
+  margin: 0 20%;
 }
+div {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+  margin-top: 2em;
+}
+
 </style>
