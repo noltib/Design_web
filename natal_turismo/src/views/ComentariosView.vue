@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1>Pontos Turísticos</h1>
-    <p>Os melhores pontos turísticos de Natal</p>
+    <h1>Comentários</h1>
+    <p>Os melhores comentários sobre os pontos turísticos de Natal</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'PontosTuristicosView'
+  name: 'ComentariosView'
 }
 </script>
 

@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1>Pontos Turísticos</h1>
-    <p>Os melhores pontos turísticos de Natal</p>
+    <h1>Passeios & Aventuras</h1>
+    <p>Os melhores passeios e aventuras de Natal</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'PontosTuristicosView'
+  name: 'PasseiosView'
 }
 </script>
 

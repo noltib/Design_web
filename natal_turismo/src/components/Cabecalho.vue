@@ -8,10 +8,10 @@
       <button class="hamburger" @click="menuAberto = !menuAberto"> ☰ </button>
 
       <ul :class="{ ativo: menuAberto }">
-        <li><RouterLink to="/">Pontos turísticos</RouterLink></li>
-        <li><RouterLink to="/">Restaurantes</RouterLink></li>
-        <li><RouterLink to="/">Passeios & Aventuras</RouterLink></li>
-        <li><RouterLink to="/">Curiosidades & Histórias</RouterLink></li>
+        <li><RouterLink to="/pontos-turisticos">Pontos turísticos</RouterLink></li>
+        <li><RouterLink to="/restaurantes">Restaurantes</RouterLink></li>
+        <li><RouterLink to="/passeios">Passeios & Aventuras</RouterLink></li>
+        <li><RouterLink to="/comentarios">Comentários</RouterLink></li>
       </ul>
     </nav>
   </header>
@@ -57,6 +57,7 @@ li a {
   text-decoration: none;
   padding: 1em;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 li a:hover {
@@ -69,13 +70,14 @@ img {
 
 .hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 2.2rem;
   background: none;
   border: none;
   color: #ffffff;
   cursor: pointer;
   background-color: #01A9B0;
   border-radius: 5px;
+  padding: 0 0.2em;
 
 }
 
@@ -92,11 +94,15 @@ img {
     top: 100%;
     right: 0;
     width: 100%;
-    border-radius: 0;
+    border-radius: 5px;
+    padding: 1.5em 0 ;
   }
 
   ul.ativo {
     display: flex;
+  }
+  li a {
+    padding: 0.5em 1em;
   }
 }
 </style>
