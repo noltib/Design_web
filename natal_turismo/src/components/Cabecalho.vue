@@ -10,7 +10,7 @@
       <ul :class="{ ativo: menuAberto }">
         <li><RouterLink to="/pontos-turisticos">Pontos turísticos</RouterLink></li>
         <li><RouterLink to="/restaurantes">Restaurantes</RouterLink></li>
-        <li><RouterLink to="/passeios">Passeios & Aventuras</RouterLink></li>
+        <li><RouterLink to="/passeios">Passeios</RouterLink></li>
         <li><RouterLink to="/comentarios">Comentários</RouterLink></li>
       </ul>
     </nav>

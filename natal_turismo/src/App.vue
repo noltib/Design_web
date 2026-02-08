@@ -1,8 +1,13 @@
 <template>
   <Cabecalho />
-  <RouterView />
+
+  <main>
+    <RouterView />
+  </main>
+
   <Rodape />
 </template>
+
 
 <script>
 import Cabecalho from "@/components/Cabecalho.vue";
@@ -22,5 +27,19 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+html, body, #app {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
 
 </style>

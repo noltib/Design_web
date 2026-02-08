@@ -29,7 +29,7 @@ article{
     background-color: #DBF2F3;
     padding: 0.5em;
     border-radius: 8px;
-    width: 20vw;
+    width: auto;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 img {
@@ -45,6 +45,7 @@ p {
     overflow: hidden;
 }
 h4 {
+    margin-top: 0.5em;
     font-family: 'Arial', Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 1.5vw;
@@ -52,6 +53,5 @@ h4 {
 article p {
     font-family: 'Arial', Helvetica, sans-serif;
     color: #444;
-    font-size: 1vw;
 }
 </style>
